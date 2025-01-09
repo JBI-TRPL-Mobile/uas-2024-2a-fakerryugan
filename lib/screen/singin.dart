@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Singup extends StatelessWidget {
+class Singin extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
@@ -24,19 +24,6 @@ class Singup extends StatelessWidget {
                 height: 30,
               ),
               Text(
-                'name',
-                style: TextStyle(fontSize: 14, color: Colors.black),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              TextField(
-                decoration: InputDecoration(border: OutlineInputBorder()),
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Text(
                 'enter your email',
                 style: TextStyle(fontSize: 14, color: Colors.black),
               ),
@@ -50,23 +37,7 @@ class Singup extends StatelessWidget {
                 height: 30,
               ),
               Text(
-                'password',
-                style: TextStyle(fontSize: 14, color: Colors.black),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  suffixIcon: Icon(Icons.visibility),
-                ),
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Text(
-                'confirm password',
+                'enter your password',
                 style: TextStyle(fontSize: 14, color: Colors.black),
               ),
               SizedBox(

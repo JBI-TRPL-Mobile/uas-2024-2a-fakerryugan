@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:template_project/screen/singin.dart';
+import 'package:template_project/screen/singup.dart';
 
 class home extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -31,7 +33,10 @@ class home extends StatelessWidget {
                       borderRadius: BorderRadius.zero,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Singin()));
+                  },
                   child: Text('Sign In'),
                 ),
                 SizedBox(width: 40),
@@ -41,7 +46,10 @@ class home extends StatelessWidget {
                       borderRadius: BorderRadius.zero,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Singup()));
+                  },
                   child: Text('Sign up'),
                 ),
               ],
