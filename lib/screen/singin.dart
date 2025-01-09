@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:template_project/screen/utamapage.dart';
 
 class Singin extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -69,7 +71,12 @@ class Singin extends StatelessWidget {
                     borderRadius: BorderRadius.zero,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
+                },
                 child: Text('Sign up'),
               ),
               SizedBox(
