@@ -59,6 +59,14 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/animelogo.png
+    - images/utama.png
+    - images/bokunohero.jpg
+    - images/onepiece.jpg
+    - images/naruto.jpg
+    - images/jjk.jpg
+    - images/kimetsu.jpg
+    - images/attack.jpg
+    - images/pp.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

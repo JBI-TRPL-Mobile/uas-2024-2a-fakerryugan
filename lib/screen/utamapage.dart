@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:template_project/screen/pesan.dart';
+import 'package:template_project/screen/profile.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -20,8 +22,7 @@ class HomeScreen extends StatelessWidget {
               Text('Welcome to Anime Paradise',
                   style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
-              Image.asset('images/anime_background.jpg',
-                  width: double.infinity),
+              Image.asset('images/utama.png', width: double.infinity),
               SizedBox(height: 10),
               Text('Embrace Your Otaku Journey',
                   style: TextStyle(fontSize: 18)),
@@ -63,9 +64,9 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   CourseCard('Naruto', 'images/naruto.jpg'),
-                  CourseCard('One Piece', 'images/one_piece.jpg'),
+                  CourseCard('One Piece', 'images/onepiece.jpg'),
                   CourseCard('Attack on Titan', 'images/attack_on_titan.jpg'),
-                  CourseCard('My Hero Academia', '/images/mha.jpg'),
+                  CourseCard('My Hero Academia', '/images/bokunohero.jpg'),
                 ],
               ),
             ],
@@ -81,10 +82,22 @@ class HomeScreen extends StatelessWidget {
               IconButton(icon: Icon(Icons.home), onPressed: () {}),
               IconButton(
                 icon: Icon(Icons.message),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MassageScreen()),
+                  );
+                },
               ),
               IconButton(icon: Icon(Icons.book), onPressed: () {}),
-              IconButton(icon: Icon(Icons.account_circle), onPressed: () {}),
+              IconButton(
+                  icon: Icon(Icons.account_circle),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfileScreen()),
+                    );
+                  }),
               IconButton(icon: Icon(Icons.search), onPressed: () {}),
             ],
           ),
@@ -144,9 +157,9 @@ class AnimeListScreen extends StatelessWidget {
                 crossAxisCount: 2,
                 children: [
                   AnimeCard('Naruto', 'images/naruto.jpg'),
-                  AnimeCard('One Piece', 'images/one_piece.jpg'),
-                  AnimeCard('Attack on Titan', 'images/attack_on_titan.jpg'),
-                  AnimeCard('My Hero Academia', 'images/mha.jpg'),
+                  AnimeCard('One Piece', 'images/onepiece.jpg'),
+                  AnimeCard('Attack on Titan', 'images/attack.jpg'),
+                  AnimeCard('My Hero Academia', 'images/bokunohero.jpg'),
                 ],
               ),
             ),
